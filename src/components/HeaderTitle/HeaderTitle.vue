@@ -1,8 +1,8 @@
 <template>
   <div class="headerContainer">
-    <img src="../../assets/image/icon/logo.png" alt="">
+    <img src="../../common/images/icon/logo.png" alt="">
     <div class="login">
-      <span>登录</span>
+      <span @click="pathTo('/login')">登录</span>
       <span>|</span>
       <span>消息</span>
     </div>
@@ -11,6 +11,11 @@
 
 <script type="text/ecmascript-6">
   export default {
+    methods:{
+      pathTo(path){
+         this.$route.path !== path && this.$router.replace(path)
+      }
+    }
     
   }
 </script>
@@ -24,13 +29,14 @@
         float left
         width 86px
         height 24px
-        margin 5px 20px
+        line-height 24px
+        margin 6px 16px
       .login
         float right   
-        margin-right 20px       
+        margin-right 3px       
         span
-         color #9999
+         color #999999
          font-size 12px
-         line-height 35px  
+         line-height 34px  
          margin  0 2px
 </style>
