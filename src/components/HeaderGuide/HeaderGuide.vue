@@ -19,7 +19,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped >
   .tab
-    width 322px
+    width 100%
     height 50px
     display flex
     .tab-item
