@@ -30,7 +30,8 @@ VeeValidate.Validator.localize('zh_CN', {
   attributes: {
     phone: '手机号',
     pwd:'密码',
-    email:'邮箱'
+    email:'邮箱',
+    code:'验证码'
     
   }
 })
