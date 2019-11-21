@@ -1,5 +1,6 @@
 <template>
   <div id="appContainer">
+    <HeaderTitle/>
    <div class="tab">
       <div class="tab-item">
         <router-link to="/original">原创</router-link>
@@ -16,7 +17,11 @@
 </template>
 
 <script type="text/ecmascript-6">
+import HeaderTitle from './components/HeaderTitle/HeaderTitle'
   export default {
+     components:{
+       HeaderTitle
+    }
   }
 </script>
 
