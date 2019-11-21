@@ -1,32 +1,20 @@
 <template>
   <div>
-   <div class="tab">
-      <div class="tab-item">
-        <router-link to="/original">原创</router-link>
-      </div>
-      <div class="tab-item" >
-        <router-link to="/romance">言情</router-link>
-      </div>
-      <div class="tab-item" >
-        <router-link to="/tongren">同人</router-link>
-      </div>
-    </div>
-   <router-view></router-view>
+     <HeaderTitle v-if="$route.meta.isShowTitle"/>
+    <HeaderGuide v-if="$route.meta.isShowHeader"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import HeaderGuide from './components/HeaderGuide/HeaderGuide'
   export default {
+     components:{
+       HeaderGuide
+    }
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-   .tab
-     width 322px
-     height 50px
-     background-color pink
-     display flex
-     .tab-item
-       margin 0 20px 
 </style>
 

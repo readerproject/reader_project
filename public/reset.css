@@ -96,3 +96,6 @@
    text-overflow: ellipsis;
    white-space: nowrap;
  }
+ button:focus {
+   outline: none;
+ }
