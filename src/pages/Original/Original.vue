@@ -6,21 +6,21 @@
           <div class="swiper-slide">
             <a href="javascript:" class="loop">
               <div class="loop-item">
-                <img src="../../assets/image/swiper/guanyu.jpg">
+                <img src="../../common/images/swiper/guanyu.jpg">
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:" class="loop">
               <div class="loop-item">
-                <img src="../../assets/image/swiper/shaonian.jpg">
+                <img src="../../common/images/swiper/shaonian.jpg">
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:" class="loop">
               <div class="loop-item">
-                <img src="../../assets/image/swiper/huizhan.jpg">
+                <img src="../../common//images/swiper/huizhan.jpg">
               </div>
             </a>
           </div>

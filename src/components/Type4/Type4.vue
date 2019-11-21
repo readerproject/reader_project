@@ -2,25 +2,25 @@
   <ul class="typeList">
     <li>
       <a href="javascritp::">
-        <img src="../../assets/image/icon/home/1_type_d.png">
+        <img src="../../common/images/icon/home/1_type_d.png">
       </a>
       <span>分类</span>
     </li>
     <li>
       <a href="javascritp::">
-        <img src="../../assets/image/icon/home/2_rank_d.png">
+        <img src="../../common/images/icon/home/2_rank_d.png">
       </a>
       <span>排行</span>
     </li>
     <li>
       <a href="javascritp::">
-        <img src="../../assets/image/icon/home/3_booklist_d.png">
+        <img src="../../common/images/icon/home/3_booklist_d.png">
       </a>
       <span>书单</span>
     </li>
     <li>
       <a href="javascritp::">
-        <img src="../../assets/image/icon/home/4_end_d.png">
+        <img src="../../common/images/icon/home/4_end_d.png">
       </a>
       <span>完结</span>
     </li>
