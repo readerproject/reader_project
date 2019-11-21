@@ -1,6 +1,17 @@
 <template>
   <div>
-   hello
+   <div class="tab">
+      <div class="tab-item">
+        <router-link to="/original">原创</router-link>
+      </div>
+      <div class="tab-item" >
+        <router-link to="/romance">言情</router-link>
+      </div>
+      <div class="tab-item" >
+        <router-link to="/tongren">同人</router-link>
+      </div>
+    </div>
+   <router-view></router-view>
   </div>
 </template>
 
@@ -10,7 +21,12 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  
- 
+   .tab
+     width 322px
+     height 50px
+     background-color pink
+     display flex
+     .tab-item
+       margin 0 20px 
 </style>
 
