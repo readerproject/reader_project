@@ -5,9 +5,9 @@
       <div class="indexTopBanner">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../assets/image/swiper/guanyu.jpg" alt="1"></a></div></div>
-            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../assets/image/swiper/huizhan.jpg" alt="2"></a></div></div>
-            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../assets/image/swiper/shaonian.jpg" alt="3"></a></div></div>
+            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../common/images/swiper/guanyu.jpg" alt="1"></a></div></div>
+            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../common/images/swiper/huizhan.jpg" alt="2"></a></div></div>
+            <div class="swiper-slide"><div class="banner-box"><a class="ui-link" href="#"><img src="../../common/images/swiper/shaonian.jpg" alt="3"></a></div></div>
           </div> 
         </div>  
       </div>    
