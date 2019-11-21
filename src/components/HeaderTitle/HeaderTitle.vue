@@ -13,7 +13,7 @@
   export default {
     methods:{
       pathTo(path){
-         this.$route.path !== path && this.$router.replace(path)
+         this.$route.path !== path && this.$router.push(path)
       }
     }
     
