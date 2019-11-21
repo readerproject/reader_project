@@ -18,13 +18,19 @@ VeeValidate.Validator.extend('code', {
   getMessage: field => field + '必须是4-6位的数字'
 })
 
+VeeValidate.Validator.extend('email', {
+  validate: value => {
+    return  /^\w+@[a-z0-9]+\.[a-z]+$/i.test(value)
+  },
+  getMessage: field => field + '必须是adc123@qq.com形式'
+})
+
 VeeValidate.Validator.localize('zh_CN', {
   messages: zh_CN.messages,
   attributes: {
     phone: '手机号',
-    code: '验证码',
     pwd:'密码',
-    username:'用户名'
+    email:'邮箱'
     
   }
 })
