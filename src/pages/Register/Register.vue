@@ -47,6 +47,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+import {Toast} from 'mint-ui'
   export default {
      data(){
       return {
@@ -56,7 +57,13 @@
       }
     },
     methods:{
-      sendCode(){
+     async sendCode(){
+        let result = await this.$API.sendCode(this.phone)
+        if(result.code === 0){
+          Toast('短信发送成功')
+        }else {
+          Toast('短信发送失败')
+        }
         // 设置倒计时的时长
         this.countDown = 10
         this.intervalId = window.setInterval(() => {
