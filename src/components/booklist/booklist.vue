@@ -105,7 +105,7 @@
             height 95px
             border-radius 10px 0 0 10px
         .book_right
-          border-radius 10px
+          border-radius 0 10px 10px 0
           background #eee
           width 229px
           display flex
