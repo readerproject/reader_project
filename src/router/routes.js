@@ -5,6 +5,8 @@ let  Tongren  = ()=>import ('../pages/Tongren/Tongren.vue');
 let  Login  = ()=>import ('../pages/Login/Login.vue');
 let  Register  = ()=>import ('../pages/Register/Register.vue');
 let  Personal =()=>import('../pages/Personal/Personal.vue')
+
+let  BookItem =()=>import('../pages/BookItem/BookItem.vue')
 import Ranking from '../pages/Ranking/Ranking'
 export default[
    {
@@ -13,8 +15,8 @@ export default[
      meta:{
        isShowTitle:true,
        isShowHeader:true
-     }
-     
+     },
+
    },
    {
     path:'/romance',
@@ -44,6 +46,10 @@ export default[
   {
     path:'/personal',
     component:Personal
+  },
+  {
+    path: '/bookitem',
+    component: BookItem
   },
   {
     path:'/',
