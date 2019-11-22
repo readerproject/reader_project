@@ -29,6 +29,8 @@
     </nav>
     <Type4 />
     <DaryceBox />
+    <StrongPush />
+    <NewBook />
   </section>
 </template>
 
@@ -37,8 +39,10 @@
   import 'swiper/css/swiper.min.css'
   import Type4 from '../../components/Type4/Type4'
   import DaryceBox from '../../components/DaryceBox/DaryceBox'
+  import StrongPush from '../../components/StrongPush/StrongPush'
+  import NewBook from '../../components/NewBook/NewBook'
   export default {
-    components: {Type4, DaryceBox},
+    components: {Type4, DaryceBox,StrongPush,NewBook},
     mounted(){
       new Swiper('.swiper-container',{
         loop : true,
