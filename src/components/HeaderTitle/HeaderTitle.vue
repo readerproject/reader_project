@@ -2,7 +2,7 @@
   <div class="headerContainer">
     <img src="../../common/images/icon/logo.png" alt="">
     <div class="login">
-      <span @click="pathTo('/login')">登录</span>
+      <span @click="pathTo('/login')">{{user.phone?user.phone :'登录'}}</span>
       <span>|</span>
       <span>消息</span>
     </div>
@@ -10,11 +10,20 @@
 </template>
 
 <script type="text/ecmascript-6">
+import {mapState} from 'vuex'
   export default {
+     mounted(){
+      this.$store.dispatch('autoLoginAction')
+    },
     methods:{
       pathTo(path){
          this.$route.path !== path && this.$router.push(path)
       }
+    },
+    computed:{
+      ...mapState({
+        user:state=>state.user
+      })
     }
     
   }

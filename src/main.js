@@ -7,6 +7,7 @@ import HeaderTitle from './components/HeaderTitle/HeaderTitle'
 import './veevalidate'
 import {Button} from 'mint-ui'
 import * as API from './api'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.component('HeaderTitle',HeaderTitle)
@@ -15,5 +16,6 @@ Vue.prototype.$API = API
 new Vue({
   components: {Romance},
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')
