@@ -355,7 +355,7 @@ import Comments from '../../components/Comments/Comments'
         color  #333
         margin-right 15px
     .comment
-      margin 5px 10px
+      margin 5px 8px
       img 
         width 11px
         height 23px
