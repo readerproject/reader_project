@@ -1,9 +1,10 @@
 <template>
   <div class="LoginContainer">
-    <div class="header">
+    <!-- <div class="header">
        <img src="../../common/images/icon/back.png" alt="" @click="$router.back()">
        <span>登录</span>
-    </div>
+    </div> -->
+    <TitleBar title="登录"/>
     <div class="logo">
        <img  src="../../common/images/icon/logo/login.png" alt="">
     </div>
@@ -24,6 +25,20 @@
             v-show="errors.has('username')"
           >{{errors.first('username')}}</span>
         </section>
+        <section class="login_email" v-if="!isPhoneLogin">
+         <i class="iconfont icon-youxiang"></i>
+          <input
+            v-model="email"
+            name="email"
+            v-validate="'required'"
+            type="email"
+            placeholder="请输入邮箱"
+          />
+          <span
+            style="color: red;"
+            v-show="errors.has('email')"
+          >{{errors.first('email')}}</span>
+        </section>
         <section class="login_verification">
           <i class="iconfont icon-mima"></i>
           <input
@@ -40,7 +55,7 @@
     </form>
         <button class="register" @click="toRegister">立即注册</button>
         <div class="userbox">
-          <span>使用邮箱登录</span>
+          <span @click="emailLogin">{{isPhoneLogin?'使用手机登录':'使用邮箱登录'}}</span>
           <p >|</p>
           <span>忘记密码</span>
         </div>
@@ -58,7 +73,7 @@
         name: "",
         pwd: "",
         phone: "",
-        code: ""
+        email: ""
       }
     },
     methods:{
@@ -67,6 +82,9 @@
       },
       toRegister(){
        this.$router.push('/register')
+      },
+      emailLogin(){
+        this.isPhoneLogin = !this.isPhoneLogin
       }
     }
   }
@@ -135,7 +153,25 @@
                 line-height 42px
               input 
                 float right 
-
+            .login_email
+                width 100%
+                height 100%
+                position relative
+                margin-top 20px
+                height 42px
+                font-size 14px
+                background-color #F5F5F5
+                border-radius 25px 
+                border 1px solid #ddd
+                i 
+                  width 20%
+                  height 100%
+                  font-size 17px
+                  position absolute
+                  left 20px
+                  line-height 42px
+                input 
+                  float right 
             .login_verification
                 width 100%
                 height 100%
