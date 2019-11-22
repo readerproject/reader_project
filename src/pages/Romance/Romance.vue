@@ -45,7 +45,7 @@
           </span>
           <span>本周强推</span>
         </div>
-        <div class="pushList">
+        <div class="pushList" @click="$router.push('/novaldetail')">
           <div class="ui-link">
             <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>

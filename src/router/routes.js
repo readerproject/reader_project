@@ -4,7 +4,8 @@ let  Romance  = ()=>import ('../pages/Romance/Romance.vue');
 let  Tongren  = ()=>import ('../pages/Tongren/Tongren.vue');
 let  Login  = ()=>import ('../pages/Login/Login.vue');
 let  Register  = ()=>import ('../pages/Register/Register.vue');
-let  Personal =()=>import('../pages/Personal/Personal.vue')
+let  Personal =()=>import('../pages/Personal/Personal.vue');
+let  NovalDetail =()=>import('../pages/NovalDetail/NovalDdetail.vue');
 import Ranking from '../pages/Ranking/Ranking'
 export default[
    {
@@ -44,6 +45,10 @@ export default[
   {
     path:'/personal',
     component:Personal
+  },
+  {
+    path:'/novaldetail',
+    component:NovalDetail
   },
   {
     path:'/',
