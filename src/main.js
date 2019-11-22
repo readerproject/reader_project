@@ -8,9 +8,11 @@ import './veevalidate'
 import {Button} from 'mint-ui'
 import * as API from './api'
 import store from './store'
+import TitleBar from './components/TitleBar/TitleBar.vue'
 
 Vue.config.productionTip = false
 Vue.component('HeaderTitle',HeaderTitle)
+Vue.component('TitleBar',TitleBar)
 Vue.component(Button.name, Button)
 Vue.prototype.$API = API
 new Vue({

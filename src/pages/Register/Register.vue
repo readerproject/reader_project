@@ -1,9 +1,10 @@
 <template>
   <div class="registerContainer">
-    <div class="header">
+    <!-- <div class="header">
       <img src="../../common/images/icon/back.png" alt="" @click="$router.back()">
       <span>注册</span>
-    </div>
+    </div> -->
+    <TitleBar title="注册"/>
     <div class="registerContent">
        <form>
           <div>

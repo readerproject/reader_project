@@ -2,7 +2,7 @@
   <div class="headerContainer">
     <img src="../../common/images/icon/logo.png" alt="">
     <div class="login">
-      <span @click="pathTo('/login')">{{user.phone?user.phone :'登录'}}</span>
+      <span @click="user.phone?pathTo('/personal'):pathTo('/login')">{{user.phone?user.phone :'登录'}}</span>
       <span>|</span>
       <span>消息</span>
     </div>

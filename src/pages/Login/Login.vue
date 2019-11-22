@@ -1,9 +1,10 @@
 <template>
   <div class="LoginContainer">
-    <div class="header">
+    <!-- <div class="header">
        <img src="../../common/images/icon/back.png" alt="" @click="$router.back()">
        <span>登录</span>
-    </div>
+    </div> -->
+    <TitleBar title="登录"/>
     <div class="logo">
        <img  src="../../common/images/icon/logo/login.png" alt="">
     </div>
