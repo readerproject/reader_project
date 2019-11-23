@@ -8,6 +8,10 @@ let  Personal =()=>import('../pages/Personal/Personal.vue');
 
 let  BookItem =()=>import('../pages/BookItem/BookItem.vue');
 let  NovalDetail =()=>import('../pages/NovalDetail/NovalDdetail.vue');
+let  Recommend =()=>import('../pages/BookItem/Recommend/Recommend.vue');
+let  Hot =()=>import('../pages/BookItem/Hot/Hot.vue');
+let  Newest =()=>import('../pages/BookItem/Newest/Newest.vue');
+
 import Ranking from '../pages/Ranking/Ranking'
 export default[
    {
@@ -50,7 +54,25 @@ export default[
   },
   {
     path: '/bookitem',
-    component: BookItem
+    component: BookItem,
+    children: [
+      {
+        path: '/bookitem/recommend',
+        component: Recommend,
+      },
+      {
+        path: '/bookitem/hot',
+        component: Hot,
+      },
+      {
+        path: '/bookitem/newest',
+        component: Newest,
+      },
+      {
+        path:'/',
+        redirect:'/bookitem/recommend'
+      }
+    ]
   },
   {  
     path:'/novaldetail',
