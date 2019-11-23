@@ -20,7 +20,7 @@
 
 <script type="text/ecmascript-6">
   
-  import SwiperHeader from '../../components/SwiperHeader/SwiperHeader'
+    import SwiperHeader from '../../components/SwiperHeader/SwiperHeader'
   import StrongPushaaa from '../../components/StrongPushaaa/StrongPushaaa'
   import NewBookaaa from '../../components/NewBookaaa/NewBookaaa'
   import HaveDone from '../../components/HaveDone/HaveDone'
