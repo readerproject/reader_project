@@ -4,7 +4,7 @@
     <div class="userinfo">
       <img src="../../common/images/icon/nohead.png" alt="">
       <div>
-        <p class="username">谜藏</p>
+        <p class="username">{{user.phone?user.phone:'谜藏'}}</p>
         <p class="level">LV.青花鱼小学生</p>
       </div>     
     </div>
@@ -23,13 +23,37 @@
         <span class="content">我的设置</span>
         <i class="iconfont icon-gengduo"></i>
     </div>
-   
+     <button class="logout" @click="logout" >退出登录</button>
 
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import {mapState} from 'vuex'
+import { MessageBox } from 'mint-ui'
+import {LOGOUT} from '../../store/mutation_type'
   export default {
+     mounted(){
+      this.$store.dispatch('autoLoginAction')
+    },
+     computed:{
+      ...mapState({
+        user:state=>state.user
+      })
+    },
+    methods:{
+      logout(){
+         MessageBox.confirm('确定退出吗？')
+       .then(
+         actionAgreen=>{
+          this.$store.commit(LOGOUT)
+          this.$router.replace('/original')
+         },
+         actionReject=>console.log('取消退出')
+       )
+      
+      }
+    }
   }
 </script>
 
@@ -78,4 +102,16 @@
         font-size 15px
       .content
         margin  0 20px
+    .logout
+      display block
+      width 100%
+      height 42px
+      margin-top 30px
+      text-align center
+      font-size 18px
+      line-height 42px
+      background-color #ffff
+      border 1px solid #26C2BF
+      color #26C2BF
+      border-radius 25px
 </style>

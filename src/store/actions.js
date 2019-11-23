@@ -11,7 +11,7 @@ export default{
   },
   async autoLoginAction({commit}){
     let result = await autoLogin()
-    if (result.code===0) {
+    if (result.code === 0) {
       commit(SAVE_USER,{user:result.data})
     }
   }

@@ -29,6 +29,8 @@
     </nav>
     <Type4 />
     <DaryceBox />
+    <StrongPush />
+    <NewBook />
   </section>
 </template>
 
@@ -37,13 +39,21 @@
   import 'swiper/css/swiper.min.css'
   import Type4 from '../../components/Type4/Type4'
   import DaryceBox from '../../components/DaryceBox/DaryceBox'
+  import StrongPush from '../../components/StrongPush/StrongPush'
+  import NewBook from '../../components/NewBook/NewBook'
+  import {getNovalList} from '../../api'
   export default {
-    components: {Type4, DaryceBox},
-    mounted(){
+    components: {Type4, DaryceBox,StrongPush,NewBook},
+   async mounted(){
       new Swiper('.swiper-container',{
         loop : true,
         autoplay:true
       })
+
+      let result = await getNovalList()
+      if (result.code===0) {
+         console.log(result)
+      }
     }
   }
 </script>

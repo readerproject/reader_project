@@ -1,5 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
+import router from '../router'
 
 const instance = axios.create({
   baseURL:'/api'
