@@ -4,7 +4,7 @@
     <div class="userinfo">
       <img src="../../common/images/icon/nohead.png" alt="">
       <div>
-        <p class="username">谜藏</p>
+        <p class="username">{{user.phone?user.phone:'谜藏'}}</p>
         <p class="level">LV.青花鱼小学生</p>
       </div>     
     </div>
@@ -29,7 +29,13 @@
 </template>
 
 <script type="text/ecmascript-6">
+import {mapState} from 'vuex'
   export default {
+     computed:{
+      ...mapState({
+        user:state=>state.user
+      })
+    }
   }
 </script>
 

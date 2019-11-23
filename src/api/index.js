@@ -25,3 +25,8 @@ export const autoLogin = ()=>ajax({
     hasToken:true
   }
 })
+/* 获取小说列表 */
+
+export const getNovalList = ()=>ajax({
+  url:'/noval_list'
+})

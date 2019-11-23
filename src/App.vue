@@ -1,7 +1,7 @@
 <template>
   <div>
      <HeaderTitle v-if="$route.meta.isShowTitle"/>
-    <HeaderGuide v-if="$route.meta.isShowHeader"/>
+     <HeaderGuide v-if="$route.meta.isShowHeader"/>
     <router-view></router-view>
   </div>
 </template>
