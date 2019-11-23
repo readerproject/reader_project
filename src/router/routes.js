@@ -6,6 +6,8 @@ let  Login  = ()=>import ('../pages/Login/Login.vue');
 let  Register  = ()=>import ('../pages/Register/Register.vue');
 let  Personal =()=>import('../pages/Personal/Personal.vue')
 let  Search =()=>import('../pages/Search/Search.vue')
+let  Personal =()=>import('../pages/Personal/Personal.vue');
+let  NovalDetail =()=>import('../pages/NovalDetail/NovalDdetail.vue');
 import Ranking from '../pages/Ranking/Ranking'
 export default[
    {
@@ -48,7 +50,11 @@ export default[
   },
   {
     path:'/search',
-    component:Search,
+    component:Search
+  },
+  {
+    path:'/novaldetail',
+    component:NovalDetail
   },
   {
     path:'/',
