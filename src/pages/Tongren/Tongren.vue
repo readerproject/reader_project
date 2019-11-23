@@ -24,7 +24,7 @@
           <a href="#" class="ui-link">
             <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="" class="novelImg">
             <p class="novelName">【DC】真香（ABO,老爷阿卡姆白月光）</p>
-            <p class="authorName">乔恩颂</p>
+            <p class="authorName">乔恩颂aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
           </a>
         </li>
          <li>
@@ -103,8 +103,6 @@
       </div> 
     </div>
     <p class="line"></p>
-
-
     <!-- 完结推荐 -->
     <div class="newBook">
       <div class="indexModelTitle">
@@ -189,13 +187,9 @@
         </li>
       </ul>
     </div>
-
-
     <!-- 完结推荐 -->
     <div class="newBook"></div>
     <p class="line"></p>
-    <!--人气推荐 -->
-    <div class="vipChange"></div>
     <!-- 底部 -->
     <div id="footer"></div>
   </div>
@@ -224,6 +218,10 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped >
+.wrapper
+    width 100% !important
+    font-size 12px
+    background #fff
   /* 顶部轮播 */
   .headerBgBox  
     width 100%
@@ -252,7 +250,7 @@
                   height 226px
   //间隔空隙
   .line 
-    height 14px
+    height 8px
     background rgba(206,206,206,0.1)
   //本周强推
   .strongPush            
@@ -301,6 +299,9 @@
             height 24px
             line-height 18px
             color #8f8f8f
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
   //新书
   .newBook
     width 100%
