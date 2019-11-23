@@ -4,10 +4,10 @@
       <SwiperHeader />
     <p class="line"></p>
     <!-- 本周强推 -->
-      <StrongPush />
+      <StrongPushaaa />
     <p class="line"></p>
     <!-- 新书精选 -->
-      <NewBook />
+      <NewBookaaa />
     <p class="line"></p>
     <!-- 完结推荐 -->
       <HaveDone />
@@ -21,12 +21,12 @@
 <script type="text/ecmascript-6">
   
   import SwiperHeader from '../../components/SwiperHeader/SwiperHeader'
-  import StrongPush from '../../components/StrongPush/StrongPush'
-  import NewBook from '../../components/NewBook/NewBook'
+  import StrongPushaaa from '../../components/StrongPushaaa/StrongPushaaa'
+  import NewBookaaa from '../../components/NewBookaaa/NewBookaaa'
   import HaveDone from '../../components/HaveDone/HaveDone'
 
   export default {
-    components:{SwiperHeader,StrongPush,NewBook,HaveDone}
+    components:{SwiperHeader,StrongPushaaa,NewBookaaa,HaveDone}
   }
 </script>
 
