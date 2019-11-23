@@ -37,13 +37,19 @@
   import 'swiper/css/swiper.min.css'
   import Type4 from '../../components/Type4/Type4'
   import DaryceBox from '../../components/DaryceBox/DaryceBox'
+  import {getNovalList} from '../../api'
   export default {
     components: {Type4, DaryceBox},
-    mounted(){
+   async mounted(){
       new Swiper('.swiper-container',{
         loop : true,
         autoplay:true
       })
+
+      let result = await getNovalList()
+      if (result.code===0) {
+         console.log(result)
+      }
     }
   }
 </script>
