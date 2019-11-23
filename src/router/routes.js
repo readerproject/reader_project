@@ -4,9 +4,10 @@ let  Romance  = ()=>import ('../pages/Romance/Romance.vue');
 let  Tongren  = ()=>import ('../pages/Tongren/Tongren.vue');
 let  Login  = ()=>import ('../pages/Login/Login.vue');
 let  Register  = ()=>import ('../pages/Register/Register.vue');
-let  Personal =()=>import('../pages/Personal/Personal.vue')
+let  Personal =()=>import('../pages/Personal/Personal.vue');
 
-let  BookItem =()=>import('../pages/BookItem/BookItem.vue')
+let  BookItem =()=>import('../pages/BookItem/BookItem.vue');
+let  NovalDetail =()=>import('../pages/NovalDetail/NovalDdetail.vue');
 import Ranking from '../pages/Ranking/Ranking'
 export default[
    {
@@ -50,6 +51,10 @@ export default[
   {
     path: '/bookitem',
     component: BookItem
+  },
+  {  
+    path:'/novaldetail',
+    component:NovalDetail
   },
   {
     path:'/',
