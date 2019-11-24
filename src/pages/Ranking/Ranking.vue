@@ -12,7 +12,7 @@
       </div>
       <div class="rankRight">
         <p class="rankHint">
-          <img src="../../common/image/icon/small/rankicon.png" alt="">订阅收益排行
+          <img src="../../common/images/icon/small/rankicon.png" alt="">订阅收益排行
         </p>
         <div class="msgTitleBox">
           <div class="checked">

@@ -3,7 +3,7 @@
     <div class="swiper-wrapper1">
       <div class="swiper-slide1">
         <div class="book_left">
-            <img class="book_img" src="../../common/image/swiper/153cc96455475f245fd0479c125ed1cf10e9.jpg" alt="">
+            <img class="book_img" src="../../common/images/swiper/153cc96455475f245fd0479c125ed1cf10e9.jpg" alt="">
           </div>
           <div class="book_right1">
             <section class="novelName">

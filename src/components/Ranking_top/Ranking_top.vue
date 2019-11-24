@@ -1,11 +1,11 @@
 <template>
   <div class="typeTitle">
     <div class="back" @click="$router.replace('/romance')">
-      <img src="../../common/image/icon/small/back.png" alt="">
+      <img src="../../common/images/icon/small/back.png" alt="">
     </div>
     <div class="titleTex" @click="toggleDialogBoxShow">
       <span class="titleText">排行 · 言情 · 全部</span>
-      <img class="imgs" @click="start" :class="[rotate?'roro':'imgs']" src="../../common/image/icon/small/moreup.png" alt="">
+      <img class="imgs" @click="start" :class="[rotate?'roro':'imgs']" src="../../common/images/icon/small/moreup.png" alt="">
     </div>
     <div class="rule">规则</div>
     <transition name="move">
