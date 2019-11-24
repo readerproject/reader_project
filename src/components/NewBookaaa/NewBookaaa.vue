@@ -1,5 +1,5 @@
 <template>
- <div class="newBook">
+ <div class="newBook-1">
       <div class="indexModelTitle">
         <span class="titleCon"></span>
         <span class="block-item">新书精选</span>
@@ -39,9 +39,10 @@ export default {
 }
 
 </script>
-<style lang='stylus' rel='stylesheet/stylus' >
- .newBook
+<style lang='stylus' rel='stylesheet/stylus' scoped>
+ .newBook-1
     width 100%
+    
     .indexModelTitle
       box-sizing border-box
       padding 18px 16px
