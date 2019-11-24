@@ -4,17 +4,17 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="javascript:">
-              <img src="../../common/image/swiper/guanyu.jpg" alt="">
+              <img src="../../common/images/swiper/guanyu.jpg" alt="">
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:">
-              <img src="../../common/image/swiper/huizhan.jpg" alt="">
+              <img src="../../common/images/swiper/huizhan.jpg" alt="">
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:">
-              <img src="../../common/image/swiper/shaonian.jpg" alt="">
+              <img src="../../common/images/swiper/shaonian.jpg" alt="">
             </a>
           </div>
         </div>
@@ -22,14 +22,14 @@
       <Classify/>
       <div class="PageContent">
         <div>
-          <img src="../../common/image/icon/small/laba.png" alt="">
+          <img src="../../common/images/icon/small/laba.png" alt="">
           <p></p>
         </div>
       </div>
       <div class="dayrecBox1">
         <span class="indexModelTitle">
           <span class="titleCon">
-            <img src="../../common/image/icon/small/title2.png" alt="">
+            <img src="../../common/images/icon/small/title2.png" alt="">
           </span>
           <span>今日必读</span>
           
@@ -41,48 +41,48 @@
       <div class="dayrecBox2">
         <div class="indexModelTitle">
           <span class="titleCon">
-            <img src="../../common/image/icon/small/title2.png" alt="">
+            <img src="../../common/images/icon/small/title2.png" alt="">
           </span>
           <span>本周强推</span>
         </div>
-        <div class="pushList">
+        <div class="pushList" @click="$router.push('/novaldetail')">
           <div class="ui-link">
-            <img src="../../common/image/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
+            <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
+            <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/180575c8985459251a2f32d961c7349e194efad.jpg" alt="">
+            <img src="../../common/images/item/180575c8985459251a2f32d961c7349e194efad.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/76be0bf82e4d729de228990020dee116.png" alt="">
+            <img src="../../common/images/item/76be0bf82e4d729de228990020dee116.png" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/86142c5e0d4181cfa2f7918f2c2d7334703865.jpg" alt="">
+            <img src="../../common/images/item/86142c5e0d4181cfa2f7918f2c2d7334703865.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/990121cd393d038f2aa2f47c5931d2a0ee80bd2.jpg" alt="">
+            <img src="../../common/images/item/990121cd393d038f2aa2f47c5931d2a0ee80bd2.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/a32a6e528f13ef5efd331508211e2b67.jpg" alt="">
+            <img src="../../common/images/item/a32a6e528f13ef5efd331508211e2b67.jpg" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>
           <div class="ui-link">
-            <img src="../../common/image/item/a984eb1f52c4c20de28e8c7fa9b09cf8.png" alt="">
+            <img src="../../common/images/item/a984eb1f52c4c20de28e8c7fa9b09cf8.png" alt="">
             <p class="novelName">我们好像在哪见过</p>
             <p class="authorName">枣吞囵囫</p>
           </div>

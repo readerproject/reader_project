@@ -3,7 +3,7 @@
     <div class="swiper-wrapper ">
       <div class="swiper-slide">
         <div class="book_left">
-            <img class="book_img" src="../../common/image/swiper/153cc96455475f245fd0479c125ed1cf10e9.jpg" alt="">
+            <img class="book_img" src="../../common/images/swiper/153cc96455475f245fd0479c125ed1cf10e9.jpg" alt="">
           </div>
           <div class="book_right">
             <section class="novelName">
@@ -21,7 +21,7 @@
       </div>
       <div class="swiper-slide">
         <div class="book_left">
-          <img class="book_img" src="../../common/image/swiper/4f8027546d6a0e30fbe69f1b712e50e7.jpg" alt="">
+          <img class="book_img" src="../../common/images/swiper/4f8027546d6a0e30fbe69f1b712e50e7.jpg" alt="">
         </div>
         <div class="book_right">
           <section class="novelName">
@@ -39,7 +39,7 @@
       </div>
       <div class="swiper-slide">
         <div class="book_left">
-          <img class="book_img" src="../../common/image/swiper/6310ad634445991abffc1f88c62451c5.jpg" alt="">
+          <img class="book_img" src="../../common/images/swiper/6310ad634445991abffc1f88c62451c5.jpg" alt="">
         </div>
         <div class="book_right">
           <section class="novelName">

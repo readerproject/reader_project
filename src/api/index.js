@@ -17,3 +17,16 @@ export const loginWithPhone = (phone, code) => ajax({
     code
   }
 })
+
+/* 自动登录 */
+export const autoLogin = ()=>ajax({
+  url:'/auto_login',
+  headers:{
+    hasToken:true
+  }
+})
+/* 获取小说列表 */
+
+export const getNovalList = ()=>ajax({
+  url:'/noval_list'
+})

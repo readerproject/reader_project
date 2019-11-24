@@ -1,34 +1,37 @@
 <template>
-  <ul class="typeList">
-    <li>
-      <a href="javascritp::">
-        <img src="../../common/images/icon/home/1_type_d.png">
-      </a>
-      <span>分类</span>
-    </li>
-    <li>
-      <a href="javascritp::">
-        <img src="../../common/images/icon/home/2_rank_d.png">
-      </a>
-      <span>排行</span>
-    </li>
-    <li>
-      <a href="javascritp::">
-        <img src="../../common/images/icon/home/3_booklist_d.png">
-      </a>
-      <span>书单</span>
-    </li>
-    <li>
-      <a href="javascritp::">
-        <img src="../../common/images/icon/home/4_end_d.png">
-      </a>
-      <span>完结</span>
-    </li>
-  </ul>
+  <div>
+    <ul class="typeList">
+      <li>
+        <a href="javascritp::">
+          <img src="../../common/images/icon/home/1_type_d.png">
+        </a>
+        <span>分类</span>
+      </li>
+      <li>
+        <a href="javascritp::">
+          <img src="../../common/images/icon/home/2_rank_d.png">
+        </a>
+        <span>排行</span>
+      </li>
+      <li>
+        <a href="javascritp::" @click="$router.push('/bookitem')">
+          <img src="../../common/images/icon/home/3_booklist_d.png">
+        </a>
+        <span>书单</span>
+      </li>
+      <li>
+        <a href="javascritp::">
+          <img src="../../common/images/icon/home/4_end_d.png">
+        </a>
+        <span>完结</span>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
+    
   }
 </script>
 

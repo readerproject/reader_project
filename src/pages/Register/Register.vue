@@ -1,9 +1,10 @@
 <template>
   <div class="registerContainer">
-    <div class="header">
+    <!-- <div class="header">
       <img src="../../common/images/icon/back.png" alt="" @click="$router.back()">
       <span>注册</span>
-    </div>
+    </div> -->
+    <TitleBar title="注册"/>
     <div class="registerContent">
        <form>
           <div>
@@ -71,8 +72,24 @@ import {Toast} from 'mint-ui'
           this.countDown === 0 && clearInterval(this.intervalId)
         }, 1000)
       },
-      registerLogin(){
-
+     async registerLogin(){
+        let { phone ,code} = this
+        let phones = ["phone", "code"];
+        let success = await  this.$validator.validateAll(phones);
+        if (success) {
+           console.log("前端验证成功");
+           //发起后端验证
+           let result = await this.$API.loginWithPhone(phone,code)
+           console.log(result)
+           if (result.code===0) {
+              console.log('登录成功！')
+              this.$store.dispatch('getUserAction',{user:result.data}) 
+              this.$router.replace('/original')
+           } 
+          
+        }else{
+          console.log("前端验证失败");
+        }
       }
     },
     computed: {

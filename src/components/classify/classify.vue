@@ -2,19 +2,19 @@
   <div id="classify">
     <div class="classifyItem" >
       <span>
-        <img src="../../common/image/icon/small/bg_1_type_d.png" alt="">
+        <img src="../../common/images/icon/small/bg_1_type_d.png" alt="">
       </span>
       <span>分类</span>
     </div>
     <div class="classifyItem" @click="$router.push('/ranking')">
       <span>
-        <img src="../../common/image/icon/small/bg_2_rank_d.png" alt="">
+        <img src="../../common/images/icon/small/bg_2_rank_d.png" alt="">
       </span>
       <span>排行</span>
     </div>
     <div class="classifyItem">
       <span>
-        <img src="../../common/image/icon/small/bg_4_end_d.png" alt="">
+        <img src="../../common/images/icon/small/bg_4_end_d.png" alt="">
       </span>
       <span>完结</span>
     </div>
