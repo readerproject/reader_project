@@ -53,7 +53,7 @@
             <p class="novelLabel">综合</p>
             <p class="novelLabel">搞笑</p>
           </section>
-        </div>`
+        </div>
       </div>
       
     </div>
@@ -66,14 +66,15 @@
   import 'swiper/css/swiper.min.css'
   export default {
     mounted(){
-    new Swiper('.swiper-container2',{
-      loop : true,
-      pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
+      this.$nextTick(() => {
+        new Swiper('.swiper-container2',{
+          loop:true,
+          pagination: {
+            el: '.swiper-pagination'
+          }
+        })
+      })
     
-  },
-    })
   }
   }
 </script>
@@ -95,9 +96,7 @@
         display flex
         width 240px
         height 95px
-        
         bottom border -1px(#f1f1f1)
-        display flex
         border-radius 10px
         .book_left
           img 

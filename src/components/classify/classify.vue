@@ -1,12 +1,12 @@
 <template>
   <div id="classify">
-    <div class="classifyItem">
+    <div class="classifyItem" >
       <span>
         <img src="../../common/image/icon/small/bg_1_type_d.png" alt="">
       </span>
       <span>分类</span>
     </div>
-    <div class="classifyItem">
+    <div class="classifyItem" @click="$router.push('/ranking')">
       <span>
         <img src="../../common/image/icon/small/bg_2_rank_d.png" alt="">
       </span>

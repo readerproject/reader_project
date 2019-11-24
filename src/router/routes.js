@@ -5,7 +5,10 @@ let  Tongren  = ()=>import ('../pages/Tongren/Tongren.vue');
 let  Login  = ()=>import ('../pages/Login/Login.vue');
 let  Register  = ()=>import ('../pages/Register/Register.vue');
 
-import Ranking from '../pages/Ranking/Ranking'
+let Ranking = () => import('../pages/Ranking/Ranking.vue');
+import Yesterday from '../pages/Ranking/Yesterday/Yesterday.vue'
+import Hebdomad from '../pages/Ranking/Hebdomad/Hebdomad.vue'
+import Thirtydays from '../pages/Ranking/Thirtydays/Thirtydays.vue'
 export default[
    {
      path:'/original',
@@ -22,7 +25,31 @@ export default[
     meta:{
       isShowHeader:true,
       isShowTitle:true,
-    }
+    },
+    
+    
+  },
+  {
+    path:' ',
+    component:Ranking,
+    children: [
+      {
+        path: '/ranking/yesterday',
+        component: Yesterday
+      },
+      {
+        path: '/ranking/hebdomad',
+        component: Hebdomad
+      },
+      {
+        path: '/ranking/thirtydays',
+        component: Thirtydays
+      },
+      {
+        path: '/ranking',
+        redirect: '/ranking/yesterday'
+      }
+    ]
   },
   {
     path:'/tongren',
@@ -45,9 +72,6 @@ export default[
     path:'/',
     redirect:'/original'
   },
-  // {
-  //   path:'',
-  //   component:
-  // }
+  
 
 ]

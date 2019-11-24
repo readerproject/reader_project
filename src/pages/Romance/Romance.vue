@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <classify/>
+      <Classify/>
       <div class="PageContent">
         <div>
           <img src="../../common/image/icon/small/laba.png" alt="">
@@ -33,7 +33,7 @@
           </span>
           <span>今日必读</span>
           
-          <booklist/>
+          <Booklist/>
           
         </span>
         
@@ -96,20 +96,16 @@
 <script type="text/ecmascript-6">
   import Swiper from 'swiper'
   import 'swiper/css/swiper.min.css'
-  import classify from '../../components/classify/classify'
-  import booklist from '../../components/booklist/booklist'
+  import Classify from '../../components/Classify/Classify'
+  import Booklist from '../../components/Booklist/Booklist'
   export default {
     components:{
-      classify,
-      booklist
+      Classify,
+      Booklist
     },
     mounted(){
       this.$nextTick(() => {
         new Swiper('.swiper-container',{
-        pagination: {
-          el: '.swiper-pagination',
-          
-        },
         loop:true,
         autoplay:true
       })
