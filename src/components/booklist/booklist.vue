@@ -71,7 +71,17 @@
           loop:true,
           pagination: {
             el: '.swiper-pagination',
-          }
+          },
+            effect : 'coverflow',
+            slidesPerView: 2,
+            centeredSlides: true,
+            coverflowEffect: {
+            rotate: 100,
+            stretch: 1,
+            depth: 1,
+            modifier: 1,
+            slideShadows : false
+          },
         })
       })
     
@@ -86,7 +96,7 @@
     height 158px
     .swiper-pagination-bullets
       position absolute
-      bottom 130px
+      bottom 32px
     .swiper-wrapper
       width 100%
       height 130px

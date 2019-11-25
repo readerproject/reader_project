@@ -21,9 +21,31 @@
       </div>
       <Classify/>
       <div class="PageContent">
-        <div>
-          <img src="../../common/images/icon/small/laba.png" alt="">
-          <p></p>
+        <img src="../../common/images/icon/small/laba.png" alt="">
+        <div class="swiper-container swiper-noticeMsg">
+          <div class="swiper-wrapper swiper-notice">
+            <span class=" swiper-slide swiper-lineNoticeMsg">
+              <span style="color: #FFA28D">偌雅</span>
+              <span>送给《天下没有免费的小裙子》</span>
+              <span style="color: #FFA28D">言亦</span>
+              <span>幸运铃X 1</span>
+            </span>
+            <span class=" swiper-slide swiper-lineNoticeMsg">
+              <span style="color: #FFA28D">偌雅</span>
+              <span>送给《天下没有免费的小裙子》</span>
+              <span style="color: #FFA28D">言亦</span>
+              <span>幸运铃X 1</span>
+            </span>
+            <span class=" swiper-slide swiper-lineNoticeMsg">
+              <span style="color: #FFA28D">偌雅</span>
+              <span>送给《天下没有免费的小裙子》</span>
+              <span style="color: #FFA28D">言亦</span>
+              <span>幸运铃X 1</span>
+            </span>
+            <span class="swiper-slide swiper-lineNoticeMsg">
+
+            </span>
+          </div>
         </div>
       </div>
       <div class="dayrecBox1">
@@ -32,9 +54,7 @@
             <img src="../../common/images/icon/small/title2.png" alt="">
           </span>
           <span>今日必读</span>
-          
           <Booklist/>
-          
         </span>
         
       </div>
@@ -73,8 +93,12 @@
       this.$nextTick(() => {
         new Swiper('.swiper-container',{
         loop:true,
-        autoplay:true
-      })
+        autoplay:true,
+      }),
+        new Swiper('.swiper-noticeMsg',{
+          loop:true,
+          autoplay:true,
+        })
       }),
       this.$store.dispatch('getBooksAction')
     },
@@ -94,7 +118,6 @@
         width 100%
         height 223px
         .swiper-wrapper
-          
           height 100%
           .swiper-slide
             display flex
@@ -112,6 +135,20 @@
       img 
         width 28px
         height 28px
+        float left
+      .swiper-noticeMsg 
+        width 301px
+        height 25px
+        line-height 30px
+        float right
+        margin-right 40px
+        white-space: nowrap
+        overflow hidden
+        .swiper-notice
+          height 100%
+          .swiper-lineNoticeMsg
+            width 100%
+            height 100%
     .dayrecBox1
       width 100%
       height 158px
