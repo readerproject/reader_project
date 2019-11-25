@@ -1,6 +1,6 @@
 
 <template>
-  <div class="strongPush">
+  <div class="strongPush-1">
       <div class="indexModelTitle">
         <span class="titleCon"></span>
         <span class="block-item">本周强推</span>
@@ -72,8 +72,8 @@ export default {
 }
 
 </script>
-<style lang='stylus' rel='stylesheet/stylus' >
-  .strongPush            
+<style lang='stylus' rel='stylesheet/stylus' scoped>
+  .strongPush-1            
     width 100%
     //height 100%
     .indexModelTitle
