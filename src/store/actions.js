@@ -1,6 +1,7 @@
 
-import { SAVE_USER ,SAVE_TOKEN } from './mutation_type'
+import { SAVE_USER ,SAVE_TOKEN ,SAVE_BOOKS } from './mutation_type'
 import {autoLogin} from '../api'
+import {getNovalList} from '../api'
 
 export default{
 
@@ -14,6 +15,13 @@ export default{
     if (result.code === 0) {
       commit(SAVE_USER,{user:result.data})
     }
+  },
+  async getBooksAction({commit,books}){
+    let result = await getNovalList(books)
+    if (result.code === 0) {
+      commit(SAVE_BOOKS,{books:result.data})
+    }
   }
+  
 
 }

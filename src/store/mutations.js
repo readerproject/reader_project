@@ -1,7 +1,8 @@
 import {
   SAVE_USER,
   SAVE_TOKEN,
-  LOGOUT
+  LOGOUT,
+  SAVE_BOOKS
 } from './mutation_type'
 
 export default{
@@ -16,5 +17,8 @@ export default{
     state.user = {}
     state.token = ''
     localStorage.removeItem('token_key')
+  },
+  [SAVE_BOOKS](state,{books}){
+    state.books = books 
   }
 }

@@ -70,7 +70,7 @@
         new Swiper('.swiper-container2',{
           loop:true,
           pagination: {
-            el: '.swiper-pagination'
+            el: '.swiper-pagination',
           }
         })
       })
@@ -86,7 +86,7 @@
     height 158px
     .swiper-pagination-bullets
       position absolute
-      bottom 86px
+      bottom 130px
     .swiper-wrapper
       width 100%
       height 130px

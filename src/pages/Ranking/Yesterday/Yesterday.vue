@@ -2,21 +2,6 @@
   <div class="bookWrapper">
     <div class="bookContent">
       <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      <BooksList/>  
-      
     </div>  
   </div>  
 </template>

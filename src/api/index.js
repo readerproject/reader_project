@@ -28,5 +28,5 @@ export const autoLogin = ()=>ajax({
 /* 获取小说列表 */
 
 export const getNovalList = ()=>ajax({
-  url:'/noval_list'
+  url:'/noval_list',
 })

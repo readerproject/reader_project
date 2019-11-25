@@ -46,45 +46,10 @@
           <span>本周强推</span>
         </div>
         <div class="pushList" @click="$router.push('/novaldetail')">
-          <div class="ui-link">
-            <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/153cb3a4bd6947b928a220e7eb18eaff9e9b.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/180575c8985459251a2f32d961c7349e194efad.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/76be0bf82e4d729de228990020dee116.png" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/86142c5e0d4181cfa2f7918f2c2d7334703865.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/990121cd393d038f2aa2f47c5931d2a0ee80bd2.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/a32a6e528f13ef5efd331508211e2b67.jpg" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
-          </div>
-          <div class="ui-link">
-            <img src="../../common/images/item/a984eb1f52c4c20de28e8c7fa9b09cf8.png" alt="">
-            <p class="novelName">我们好像在哪见过</p>
-            <p class="authorName">枣吞囵囫</p>
+          <div class="ui-link" v-for="(book,index) in books" :key="index">
+            <img :src="book.novel_cover" alt="">
+            <p class="novelName">{{book.novel_name}}</p>
+            <p class="authorName">{{book.novel_author}}</p>
           </div>
         </div>
         
@@ -94,6 +59,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import {mapState} from 'vuex'
   import Swiper from 'swiper'
   import 'swiper/css/swiper.min.css'
   import Classify from '../../components/Classify/Classify'
@@ -109,6 +75,12 @@
         loop:true,
         autoplay:true
       })
+      }),
+      this.$store.dispatch('getBooksAction')
+    },
+    computed: {
+      ...mapState({
+        books:state => state.books
       })
     }
   }
@@ -153,12 +125,6 @@
             width 11px
             height 23px
             vertical-align middle
-      .pushList
-        width 100%
-        height 297px 
-        background pink 
-        box-sizing border-box
-        padding 14px
     .dayrecBox2
       width 100%
       height 386px
@@ -175,23 +141,28 @@
       .pushList
         width 100%
         height 297px 
-        
         box-sizing border-box
         padding 0 14px
         display flex
         justify-content space-between
         flex-wrap wrap
+        overflow hidden
         .ui-link
           width 70px
           height 155px
           img 
             width 70px
             height 93px
-            
           .novelName
             font-size 13px
             margin 6px 0
+            white-space nowrap
+            text-overflow: ellipsis
+            overflow hidden
           .authorName
             font-size 13px
             color #8F8F9E
+            white-space nowrap
+            text-overflow: ellipsis
+            overflow hidden
 </style>
