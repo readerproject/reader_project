@@ -62,6 +62,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+// hello
   import Swiper from 'swiper'
   import 'swiper/css/swiper.min.css'
   export default {
